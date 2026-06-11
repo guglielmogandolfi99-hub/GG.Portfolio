@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||"dark")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Guglielmo Gandolfi</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#050505">
+<link rel="alternate" hreflang="it" href="https://guglielmogandolfi.netlify.app/404.html"><link rel="alternate" hreflang="en" href="https://guglielmogandolfi.netlify.app/404.html"><link rel="alternate" hreflang="x-default" href="https://guglielmogandolfi.netlify.app/404.html">
+<meta property="og:locale" content="it_IT"><meta property="og:locale:alternate" content="en_US">
+<meta name="description" content="Page not found — Guglielmo Gandolfi portfolio.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><text x='16' y='24' font-family='Inter,sans-serif' font-size='20' font-weight='900' fill='%23fff' text-anchor='middle'>GG</text></svg>">
+<link rel="canonical" href="https://guglielmogandolfi.netlify.app/404.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&family=Staatliches&family=Inter:opsz,wght@14..32,400;14..32,700;14..32,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">
+  <span class="lang-en">Skip to content</span>
+  <span class="lang-it">Salta al contenuto</span>
+</a>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">&#8593;</button>
+<nav>
+  <a href="/index.html">G. Gandolfi</a>
+  <div class="nav-links" id="navLinks">
+    <a href="/index.html#about"><span class="lang-en">About</span><span class="lang-it">Chi sono</span></a>
+    <a href="/index.html#projects"><span class="lang-en">Projects</span><span class="lang-it">Progetti</span></a>
+    <a href="/index.html#contact"><span class="lang-en">Contact</span><span class="lang-it">Contatti</span></a>
+  </div>
+  <div class="nav-right">
+    <button class="lang-btn" onclick="toggleLang()" aria-label="Switch language"><span class="lang-en">ITA</span><span class="lang-it">ENG</span></button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">☀</button>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</nav>
+<main id="main-content" tabindex="-1" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:40px 20px;position:relative;overflow:hidden">
+  <img src="/immagini/PICCIONE-EE.webp" alt="" class="img-dark deco-piccione">
+  <img src="/immagini/PICCIONE2.webp" alt="" class="img-light deco-piccione">
+  <div style="display:flex;flex-direction:column;align-items:center;z-index:1">
+    <h1 class="glitch glitch-404" data-text="404">404</h1>
+    <p class="desc-404">
+      <span class="lang-en">The pigeon got lost. So did this page.</span>
+      <span class="lang-it">Il piccione si è perso. Anche questa pagina.</span>
+    </p>
+    <a href="/index.html" class="btn-404">
+      <span class="lang-en">Go home</span>
+      <span class="lang-it">Torna all'inizio</span>
+    </a>
+  </div>
+</main>
+<script src="/script.js"></script>
+</body>
+</html>

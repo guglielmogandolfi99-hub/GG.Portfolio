@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.setAttribute("data-theme",localStorage.getItem("theme")||"dark")</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guglielmo Gandolfi — Visual Designer & Illustrator</title>
+<meta name="description" content="Portfolio di Guglielmo Gandolfi — Visual Designer e Illustratore con base a Lecco. Branding, design editoriale, illustrazione e UX/UI.">
+<meta property="og:title" content="Guglielmo Gandolfi — Visual Designer & Illustrator">
+<meta property="og:description" content="Branding, editorial design, illustration and digital experiences.">
+<meta property="og:image" content="https://guglielmogandolfi.netlify.app/immagini/sfondo.webp">
+<meta property="og:url" content="https://guglielmogandolfi.netlify.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#050505">
+<link rel="alternate" hreflang="it" href="https://guglielmogandolfi.netlify.app/"><link rel="alternate" hreflang="en" href="https://guglielmogandolfi.netlify.app/"><link rel="alternate" hreflang="x-default" href="https://guglielmogandolfi.netlify.app/">
+<meta property="og:locale" content="it_IT"><meta property="og:locale:alternate" content="en_US">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23050505'/><text x='16' y='24' font-family='Inter,sans-serif' font-size='20' font-weight='900' fill='%23fff' text-anchor='middle'>GG</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="immagini/sfondo.webp">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&family=Staatliches&family=Inter:opsz,wght@14..32,400;14..32,700;14..32,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://guglielmogandolfi.netlify.app/">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Guglielmo Gandolfi",
+  "jobTitle":"Visual Designer & Illustrator",
+  "url":"https://guglielmogandolfi.netlify.app/",
+  "sameAs":[
+    "https://instagram.com/bread_will",
+    "https://www.linkedin.com/in/guglielmo-gandolfi-111b77334"
+  ],
+  "address":{"@type":"PostalAddress","addressLocality":"Lecco","addressCountry":"IT"},
+  "alumniOf":{"@type":"CollegeOrUniversity","name":"Accademia di Belle Arti di Brera"}
+}
+</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">
+  <span class="lang-en">Skip to content</span>
+  <span class="lang-it">Salta al contenuto</span>
+</a>
+<button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+<nav>
+  <a href="index.html">G. Gandolfi</a>
+  <div class="nav-links" id="navLinks">
+    <a href="#about" onclick="closeNav()"><span class="lang-en">About</span><span class="lang-it">Chi sono</span></a>
+    <a href="#projects" onclick="closeNav()"><span class="lang-en">Projects</span><span class="lang-it">Progetti</span></a>
+    <a href="#contact" onclick="closeNav()"><span class="lang-en">Contact</span><span class="lang-it">Contatti</span></a>
+  </div>
+  <div class="nav-right">
+    <button class="lang-btn" onclick="toggleLang()" aria-label="Switch language"><span class="lang-en">ITA</span><span class="lang-it">ENG</span></button>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">☀</button>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<main id="main-content" tabindex="-1">
+
+  <!-- Hero -->
+  <section class="hero"><img src="immagini/pixel-scheletri.webp" alt="Pixel art skeletons — glitch composition" class="hero-side-top" loading="lazy">
+    <img src="immagini/elegia-nera.webp" alt="Dark woodcut illustration — elegy" class="hero-side-bottom" loading="lazy">
+    <div class="hero-content">
+      <div class="hero-tag fade-up">
+        <span class="lang-en">Analog heart. Digital mind.</span>
+        <span class="lang-it">Cuore analogico. Mente digitale.</span>
+      </div>
+      <h1 class="hero-phrase glitch fade-up fade-up-delay-1" data-text-it="Grezzo il tratto, nitido il pixel." data-text-en="Raw craft, sharp pixels.">
+        <span class="lang-en">Raw craft, sharp pixels.</span>
+        <span class="lang-it">Grezzo il tratto, nitido il pixel.</span>
+      </h1>
+      <p class="fade-up fade-up-delay-3">
+        <span class="lang-en">I mix woodcut, illustration and digital craft. From engraving to screen — branding, editorial, posters that leave a mark. Sometimes I make nice things too.</span>
+        <span class="lang-it">Mescolo xilografia, illustrazione e artigianato digitale. Dall'incisione allo schermo — branding, design editoriale, poster che lasciano il segno. Ogni tanto faccio anche cose belle.</span>
+      </p>
+      <div class="hero-cta fade-up fade-up-delay-3">
+        <a href="#projects"><span class="lang-en">See my works</span><span class="lang-it">Vedi i miei lavori</span></a>
+        <a href="#contact"><span class="lang-en">Get in touch</span><span class="lang-it">Contattami</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about reveal">
+    <div>
+      <div class="about-label"><span class="lang-en">About me</span><span class="lang-it">Chi sono</span></div>
+      <h2 class="glitch" style="font-size:2.4rem;margin-bottom:24px" data-text-it="Guglielmo Gandolfi" data-text-en="Guglielmo Gandolfi">Guglielmo Gandolfi</h2>
+      <div class="about-text">
+        <p><span class="lang-en">I'm a visual designer and illustrator based in Lecco, Italy. I mix analog techniques — woodcut, chalk, hand-drawn illustration — with digital design to create bold, tactile visual identities.</span><span class="lang-it">Sono un visual designer e illustratore con base a Lecco. Mescolo tecniche analogiche — xilografia, gessetti, illustrazione a mano — con il design digitale per creare identità visive audaci e materiche.</span></p>
+        <p><span class="lang-en">I studied at the Brera Academy of Fine Arts and completed a master's in Communication Design. I have collaborated with studios, festivals, and local businesses, always bringing a mix of conceptual thinking and hands-on craft.</span><span class="lang-it">Ho studiato all'Accademia di Belle Arti di Brera e completato un master in Communication Design. Ho collaborato con studi, festival e realtà locali, portando sempre un mix di pensiero concettuale e manualità artigianale.</span></p>
+        <p><span class="lang-en">I don't decorate. I build identities that have weight — things you can almost feel on your fingertips. Wood, ink, chalk, pixels: whatever the idea demands, I find the right language.</span><span class="lang-it">Non decoro. Costruisco identità che hanno peso — cose che quasi senti sulla punta delle dita. Legno, inchiostro, gesso, pixel: qualsiasi cosa l'idea richieda, trovo il linguaggio giusto.</span></p>
+      </div>
+      <div class="about-meta">
+        <div class="about-meta-item">
+          <h4><span class="lang-en">Skills</span><span class="lang-it">Competenze</span></h4>
+          <p><span class="lang-en">Brand Identity, Editorial Design, Illustration, UX/UI Design, Photography, Woodcut Printmaking</span><span class="lang-it">Brand Identity, Design Editoriale, Illustrazione, UX/UI Design, Fotografia, Xilografia</span></p>
+        </div>
+        <div class="about-meta-item">
+          <h4><span class="lang-en">Tools</span><span class="lang-it">Strumenti</span></h4>
+          <p><span class="lang-en">Figma, Adobe Creative Suite, AI</span><span class="lang-it">Figma, Adobe Creative Suite, AI</span></p>
+        </div>
+      </div>
+      <a href="cv-it.pdf" download class="cv-btn" id="cv-download" data-href-it="cv-it.pdf" data-href-en="cv-en.pdf"><span class="lang-en">Download CV ↓</span><span class="lang-it">Scarica CV ↓</span></a>
+    </div>
+    <div class="about-visual">
+      <img src="immagini/PICCIONE-EE.webp" alt="Pigeon woodcut print — about visual" loading="lazy" class="img-dark">
+      <img src="immagini/PICCIONE2.webp" alt="Pigeon woodcut print — about visual" loading="lazy" class="img-light">
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects-section reveal">
+    <div class="projects-header">
+      <div>
+        <div class="projects-label"><span class="lang-en">Selected works</span><span class="lang-it">Lavori selezionati</span></div>
+        <img src="immagini/portfolio-scritta.webp" alt="Portfolio" class="portfolio-heading-img img-dark" loading="lazy">
+        <img src="immagini/portfolio-logo.webp" alt="Portfolio" class="portfolio-heading-img img-light" loading="lazy">
+      </div>
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all"><span class="lang-en">All</span><span class="lang-it">Tutti</span></button>
+        <button class="filter-btn" data-filter="Branding">Branding</button>
+        <button class="filter-btn" data-filter="Editorial">Editorial</button>
+        <button class="filter-btn" data-filter="UX/UI Design">UX/UI Design</button>
+        <button class="filter-btn" data-filter="Poster Design">Poster Design</button>
+        <button class="filter-btn" data-filter="Packaging">Packaging</button>
+        <button class="filter-btn" data-filter="Photography"><span class="lang-en">Photography</span><span class="lang-it">Fotografia</span></button>
+      </div>
+    </div>
+    <div class="projects-grid">
+      <a href="portfolio/universo-corto/index.html" class="project-card" data-category="Branding">
+        <div class="project-card-img" style="background-image:url(portfolio/universo-corto/Guglielmo-Gandolfi-Portfolio-202666.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Branding</span><span class="lang-it">Branding</span></div>
+          <div class="project-card-title">UniversoCorto</div><div class="project-card-desc" data-desc-it="Festival internazionale del cortometraggio" data-desc-en="International short film festival">Festival internazionale del cortometraggio</div>
+        </div>
+      </a>
+      <a href="portfolio/retro/index.html" class="project-card" data-category="Packaging">
+        <div class="project-card-img" style="background-image:url(portfolio/retro/Retro-Paranoid-copertina-cd1.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Packaging</span><span class="lang-it">Packaging</span></div>
+          <div class="project-card-title">CD Covers</div><div class="project-card-desc" data-desc-it="Copertine CD hardcore punk" data-desc-en="Hardcore punk CD covers">Copertine CD hardcore punk</div>
+        </div>
+      </a>
+      <a href="portfolio/posterhouse/index.html" class="project-card" data-category="Poster Design">
+        <div class="project-card-img" style="background-image:url(portfolio/posterhouse/resegone.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Poster Design</span><span class="lang-it">Poster Design</span></div>
+          <div class="project-card-title">Poster House</div><div class="project-card-desc" data-desc-it="Poster per il territorio lecchese" data-desc-en="Posters for the Lecco area">Poster per il territorio lecchese</div>
+        </div>
+      </a>
+      <a href="portfolio/nuvole/index.html" class="project-card" data-category="UX/UI Design">
+        <div class="project-card-img" style="background-image:url(portfolio/nuvole/Guglielmo-Gandolfi-Landing-Page-CorsoUX.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">UX/UI Design</span><span class="lang-it">UX/UI Design</span></div>
+          <div class="project-card-title">Nuvole</div><div class="project-card-desc" data-desc-it="Concept app per cloud spotting" data-desc-en="Cloud spotting app concept">Concept app per cloud spotting</div>
+        </div>
+      </a>
+      <a href="portfolio/bb/index.html" class="project-card" data-category="UX/UI Design">
+        <div class="project-card-img" style="background-image:url(portfolio/bb/Splashpage.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">UX/UI Design</span><span class="lang-it">UX/UI Design</span></div>
+          <div class="project-card-title">Blockbuster</div><div class="project-card-desc" data-desc-it="Prototipo app streaming" data-desc-en="Streaming app prototype">Prototipo app streaming</div>
+        </div>
+      </a>
+      <a href="portfolio/imbookati/index.html" class="project-card" data-category="Editorial">
+        <div class="project-card-img" style="background-image:url(portfolio/imbookati/photo_2025-10-13_15-54-37.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Editorial</span><span class="lang-it">Editoriale</span></div>
+          <div class="project-card-title">Imbookati</div><div class="project-card-desc" data-desc-it="Illustrazione xilografica per podcast" data-desc-en="Woodcut illustration for podcast">Illustrazione xilografica per podcast</div>
+        </div>
+      </a>
+      <a href="portfolio/funghi-in-citta/index.html" class="project-card" data-category="Editorial">
+        <div class="project-card-img" style="background-image:url(portfolio/funghi-in-citta/cc85843d7fed45f49d95f6f7d9985be2lHuBBQWMAoAQJVqJ-3.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Editorial</span><span class="lang-it">Editoriale</span></div>
+          <div class="project-card-title">Funghi in città</div><div class="project-card-desc" data-desc-it="Interpretazione del racconto di Calvino" data-desc-en="Interpretation of Calvino's story">Interpretazione del racconto di Calvino</div>
+        </div>
+      </a>
+      <a href="portfolio/ci-vuole-fiore/index.html" class="project-card" data-category="Editorial">
+        <div class="project-card-img" style="background-image:url(portfolio/ci-vuole-fiore/locandina.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Editorial</span><span class="lang-it">Editoriale</span></div>
+          <div class="project-card-title">Ci vuole fiore</div><div class="project-card-desc" data-desc-it="Volantini per eventi culturali" data-desc-en="Flyers for cultural events">Volantini per eventi culturali</div>
+        </div>
+      </a>
+      <a href="portfolio/mangia/index.html" class="project-card" data-category="Editorial">
+        <div class="project-card-img" style="background-image:url(portfolio/mangia/mini-zine-carne.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Editorial</span><span class="lang-it">Editoriale</span></div>
+          <div class="project-card-title">Mangia</div><div class="project-card-desc" data-desc-it="Mini zine sul consumo di carne" data-desc-en="Mini zine about meat consumption">Mini zine sul consumo di carne</div>
+        </div>
+      </a>
+      <a href="portfolio/fotografia/index.html" class="project-card" data-category="Photography">
+        <div class="project-card-img" style="background-image:url(portfolio/fotografia/photo_1_2025-10-21_03-01-31.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Photography</span><span class="lang-it">Fotografia</span></div>
+          <div class="project-card-title">Scomposition</div><div class="project-card-desc" data-desc-it="Serie fotografica surreale" data-desc-en="Surreal photographic series">Serie fotografica surreale</div>
+        </div>
+      </a>
+      <a href="portfolio/alma-garden/index.html" class="project-card" data-category="Branding">
+        <div class="project-card-img" style="background-image:url(portfolio/alma-garden/Cattura.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Branding</span><span class="lang-it">Branding</span></div>
+          <div class="project-card-title">Alma Garden</div><div class="project-card-desc" data-desc-it="Esercitazione — brand identity lounge bar" data-desc-en="Academic exercise — lounge bar branding">Esercitazione — brand identity lounge bar</div>
+        </div>
+      </a>
+      <a href="portfolio/misini/index.html" class="project-card" data-category="Branding">
+        <div class="project-card-img" style="background-image:url(portfolio/misini/Overhead-Business-Card-Mockup.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Branding</span><span class="lang-it">Branding</span></div>
+          <div class="project-card-title">Misini</div><div class="project-card-desc" data-desc-it="Esercitazione — brand identity piastrelle" data-desc-en="Academic exercise — tile shop branding">Esercitazione — brand identity piastrelle</div>
+        </div>
+      </a>
+      <a href="portfolio/personal-poster/index.html" class="project-card" data-category="Poster Design">
+        <div class="project-card-img" style="background-image:url(portfolio/personal-poster/acid.webp)"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-info">
+          <div class="project-card-category"><span class="lang-en">Poster Design</span><span class="lang-it">Poster Design</span></div>
+          <div class="project-card-title">Personal Posters</div><div class="project-card-desc" data-desc-it="Poster autoprodotti sperimentali" data-desc-en="Self-initiated experimental posters">Poster autoprodotti sperimentali</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section reveal">
+    <div class="contact-inner">
+      <div>
+        <div class="contact-label"><span class="lang-en">Get in touch</span><span class="lang-it">Contattami</span></div>
+        <h2 class="glitch" data-text-it="Diamogli peso" data-text-en="Make it matter"><span class="lang-en">Make it matter</span><span class="lang-it">Diamogli peso</span></h2>
+        <p><span class="lang-en">Need something different? Let's talk.</span><span class="lang-it">Ti serve qualcosa di diverso? Parliamone.</span></p>
+        <div class="contact-links">
+          <a href="#" class="contact-link" id="email-link">
+            <span class="contact-link-icon">&#9993;</span>
+            <span class="lang-en">Email</span><span class="lang-it">Email</span>
+          </a>
+          <a href="https://instagram.com/bread_will" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-link-icon">☉</span>
+            <span class="lang-en">Instagram</span><span class="lang-it">Instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/guglielmo-gandolfi-111b77334" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-link-icon">☍</span>
+            <span class="lang-en">LinkedIn</span><span class="lang-it">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+      <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="bot-field">
+        <label class="sr-only" for="form-name"><span class="lang-en">Name</span><span class="lang-it">Nome</span></label><input type="text" id="form-name" name="name" placeholder="Nome" data-placeholder-it="Nome" data-placeholder-en="Name" required>
+        <label class="sr-only" for="form-email"><span class="lang-en">Email</span><span class="lang-it">Email</span></label><input type="email" id="form-email" name="email" placeholder="Email" data-placeholder-it="Email" data-placeholder-en="Email" required>
+        <label class="sr-only" for="form-message"><span class="lang-en">Message</span><span class="lang-it">Messaggio</span></label><textarea id="form-message" name="message" placeholder="Raccontami il tuo progetto..." data-placeholder-it="Raccontami il tuo progetto..." data-placeholder-en="Tell me about your project..." required></textarea>
+        <button type="submit"><span class="lang-en">Send message</span><span class="lang-it">Invia messaggio</span></button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>&copy; 2026 Guglielmo Gandolfi</span>
+  <span>Design & Code</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
