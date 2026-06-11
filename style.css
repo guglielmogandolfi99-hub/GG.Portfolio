@@ -367,3 +367,5 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 .desc-404{color:#999;font-size:18px;font-weight:300;margin-bottom:40px;max-width:380px}
 [data-theme="light"] .glitch-404{color:#b026ff}
 [data-theme="light"] .desc-404{color:#444}
+
+@media(hover:none),(pointer:coarse){.glitch::before,.glitch::after{display:none!important}}
