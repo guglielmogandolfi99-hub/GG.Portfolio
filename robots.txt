@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://guglielmogandolfi.netlify.app/sitemap.xml
+Sitemap: https://guglielmogandolfi99-hub.github.io/GG.Portfolio/sitemap.xml
