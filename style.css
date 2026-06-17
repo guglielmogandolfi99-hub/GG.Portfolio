@@ -96,9 +96,9 @@ nav>a:first-child{font-weight:700;font-size:18px;letter-spacing:-.01em;white-spa
 @media(max-width:1024px){.projects-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.projects-grid{grid-template-columns:1fr}}
 .project-card{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/5;cursor:pointer;display:block;transition:transform .35s cubic-bezier(.22,1,.36,1)}
-.project-card:hover,.project-card:active{transform:translateY(-6px)}
+.project-card:hover,.project-card:active{transform:translateY(-4px)}
 .project-card-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .6s cubic-bezier(.22,1,.36,1),opacity .3s}
-.project-card:hover .project-card-img,.project-card:active .project-card-img{filter:brightness(1.1) contrast(1.15) saturate(0.8);transform:scale(1.08)}
+.project-card:hover .project-card-img,.project-card:active .project-card-img{filter:contrast(1.3) saturate(0.7) brightness(1.1);animation:card-glitch .3s steps(3) forwards}@keyframes card-glitch{0%{transform:translate(2px,-1px)}20%{transform:translate(-3px,2px)}40%{transform:translate(1px,-2px)}60%{transform:translate(-2px,-1px)}80%{transform:translate(3px,1px)}100%{transform:translate(0,0);filter:contrast(1.4) saturate(0.6) brightness(1.15) hue-rotate(-2deg)}}
 .project-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.85) 0%,rgba(0,0,0,.1) 50%,rgba(0,0,0,.15) 100%);transition:background .3s}
 .project-card:hover .project-card-overlay,.project-card:active .project-card-overlay{background:linear-gradient(to top,rgba(0,0,0,.94) 0%,rgba(0,0,0,.25) 50%,rgba(255,255,0,.04) 100%)}
 .project-card-info{position:absolute;bottom:0;left:0;right:0;padding:24px;transition:transform .35s cubic-bezier(.22,1,.36,1)}
@@ -369,3 +369,12 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 [data-theme="light"] .desc-404{color:#444}
 
 @media(hover:none),(pointer:coarse){.glitch::before,.glitch::after{display:none!important}}
+
+
+/* ========================================
+   PAGE TRANSITION GLITCH OVERLAY
+   ======================================== */
+.page-transition{position:fixed;inset:0;z-index:99999;background:#050505;pointer-events:none;opacity:0;transition:opacity .15s}
+.page-transition.active{opacity:1}
+.page-transition.glitching{animation:transition-glitch .35s steps(3)}
+@keyframes transition-glitch{0%{clip-path:inset(0 0 80% 0);transform:translate(-1%,0)}25%{clip-path:inset(20% 0 60% 0);transform:translate(1%,0)}50%{clip-path:inset(45% 0 40% 0);transform:translate(-2%,0)}75%{clip-path:inset(70% 0 10% 0);transform:translate(2%,0)}100%{clip-path:inset(0 0 0 0)}}

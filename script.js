@@ -340,4 +340,28 @@ if(emailLink){
   });
 }
 
+/* ========================================
+   PAGE TRANSITIONS
+   ======================================== */
+var glitchOverlay=document.createElement('div');
+glitchOverlay.className='page-transition';
+document.body.appendChild(glitchOverlay);
+
+document.addEventListener('click',function(e){
+  var link=e.target.closest('a[href]');
+  if(!link)return;
+  var href=link.getAttribute('href');
+  if(!href||href.startsWith('#')||href.startsWith('http')||href.startsWith('mailto')||href.startsWith('javascript'))return;
+  e.preventDefault();
+  glitchOverlay.classList.add('active','glitching');
+  setTimeout(function(){
+    glitchOverlay.classList.remove('glitching');
+    window.location.href=href;
+  },350);
+});
+
+window.addEventListener('pageshow',function(e){
+  glitchOverlay.classList.remove('active','glitching');
+});
+
 })();
