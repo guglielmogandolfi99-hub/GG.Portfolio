@@ -347,6 +347,15 @@ var glitchOverlay=document.createElement('div');
 glitchOverlay.className='page-transition';
 document.body.appendChild(glitchOverlay);
 
+var scrollBar=document.createElement('div');
+scrollBar.className='scroll-bar';
+document.body.appendChild(scrollBar);
+
+window.addEventListener('scroll',function(){
+  var h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+  scrollBar.style.width=(h>0?(window.scrollY/h)*100:0)+'%';
+},{passive:true});
+
 document.addEventListener('click',function(e){
   var link=e.target.closest('a[href]');
   if(!link)return;

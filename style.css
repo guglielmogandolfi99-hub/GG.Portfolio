@@ -378,3 +378,8 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 .page-transition.active{opacity:1}
 .page-transition.glitching{animation:transition-glitch .35s steps(3)}
 @keyframes transition-glitch{0%{clip-path:inset(0 0 80% 0);transform:translate(-1%,0)}25%{clip-path:inset(20% 0 60% 0);transform:translate(1%,0)}50%{clip-path:inset(45% 0 40% 0);transform:translate(-2%,0)}75%{clip-path:inset(70% 0 10% 0);transform:translate(2%,0)}100%{clip-path:inset(0 0 0 0)}}
+
+
+/* Scroll progress bar */
+.scroll-bar{position:fixed;top:0;left:0;height:2px;background:#ff0;z-index:101;width:0;transition:width .05s linear}
+[data-theme="light"] .scroll-bar{background:#b026ff}
