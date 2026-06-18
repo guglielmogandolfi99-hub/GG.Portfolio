@@ -414,3 +414,8 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 
 [data-theme="light"] [data-theme="light"] 
+
+
+.about-logo{width:160px;height:auto;margin:20px auto 10px;display:block}
+.logo-dark{display:block}.logo-light{display:none}
+[data-theme="light"] .logo-dark{display:none}[data-theme="light"] .logo-light{display:block}
