@@ -80,7 +80,7 @@ nav>a:first-child{font-weight:700;font-size:18px;letter-spacing:-.01em;white-spa
 .about-meta-item p{font-size:14px;color:#999;margin:0}
 .cv-btn{display:inline-flex;margin-top:32px;padding:12px 28px;border:2px solid #ff0;color:#ff0;border-radius:30px;font-size:15px;font-weight:700;transition:all .25s;letter-spacing:.02em}
 .cv-btn:hover{background:#ff0;color:#000;box-shadow:0 0 24px rgba(255,255,0,.3)}
-.about-visual{position:relative;border-radius:12px;overflow:hidden}
+.about-visual{position:relative;border-radius:12px;overflow:visible}
 .about-visual img{width:100%;height:auto;border-radius:12px;opacity:.95}
 @media(max-width:768px){.about{grid-template-columns:1fr;gap:40px}}
 
