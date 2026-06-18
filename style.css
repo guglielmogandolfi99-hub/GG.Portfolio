@@ -415,3 +415,5 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 /* About logo watermark */
 .about-logo{position:absolute;width:10px;top:5%;right:5%;z-index:0;opacity:.2}
+
+[data-theme="light"] .about-logo{opacity:.4}
