@@ -387,3 +387,10 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 @keyframes hero-img-glitch{0%,90%{filter:none;transform:inherit;clip-path:inset(0 0 0 0)}91%{filter:hue-rotate(90deg) saturate(2) contrast(1.5);transform:translate(-3px,2px);clip-path:inset(10% 0 60% 0)}92%{filter:hue-rotate(-60deg) saturate(3);transform:translate(2px,-1px);clip-path:inset(40% 0 20% 0)}93%{filter:none;transform:translate(-1px,0);clip-path:inset(0 0 0 0)}94%{transform:translate(1px,2px)}95%{transform:inherit;clip-path:inset(0 0 0 0)}}
 
 
+
+
+.piccione-guida{position:absolute;right:-200px;bottom:10%;max-width:160px;opacity:0;transition:right .8s cubic-bezier(.22,1,.36,1),opacity .6s;z-index:1;pointer-events:none}
+.contact-section.reveal.visible .piccione-guida{right:5%;opacity:.3}
+[data-theme="light"] .piccione-guida{opacity:0}
+[data-theme="light"] .contact-section.reveal.visible .piccione-guida{opacity:.25}
+@media(max-width:768px){.piccione-guida{max-width:100px;right:-150px}}
