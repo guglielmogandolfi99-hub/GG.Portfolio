@@ -345,7 +345,7 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 /* Light mode image swap */
 .img-light{display:none}
 [data-theme="light"] .img-dark{display:none}
-[data-theme="light"] .img-light{}[data-theme="light"] .nav-logo.img-light{display:inline}
+[data-theme="light"] .img-light{display:block}[data-theme="light"] .nav-logo.img-light{display:inline}
 /* Light mode red CTA */
 [data-theme="light"] .hero-cta a:first-child{background:#b026ff;color:#fff;border-color:#b026ff}
 [data-theme="light"] .hero-cta a:first-child:hover{background:#fff;color:#b026ff;box-shadow:0 0 40px rgba(176,38,255,.4)}
