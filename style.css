@@ -396,3 +396,5 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 [data-theme="light"] .nav-logo.img-dark{display:none}
 
 
+
+.about-logo-watermark{position:absolute;inset:0;width:60%;height:60%;margin:auto;opacity:.15;z-index:0;pointer-events:none;object-fit:contain}
