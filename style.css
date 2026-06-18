@@ -390,8 +390,8 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 
 /* About entrance animation */
-.about-visual img:not(.about-logo){transform:translateX(40px);opacity:0;transition:transform .8s cubic-bezier(.22,1,.36,1),opacity .6s}
-.about.reveal.visible .about-visual img:not(.about-logo){transform:translateX(0);opacity:.95}
+.about-logo{transform:translateX(40px);opacity:0;transition:transform .8s cubic-bezier(.22,1,.36,1),opacity .6s}
+.about.reveal.visible .about-logo{transform:translateX(0);opacity:1}
 
 
 /* Nav logo */
