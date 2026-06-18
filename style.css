@@ -345,7 +345,7 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 /* Light mode image swap */
 .img-light{display:none}
 [data-theme="light"] .img-dark{display:none}
-[data-theme="light"] .img-light{display:block}
+[data-theme="light"] .img-light{display:block}[data-theme="light"] .nav-logo.img-light{display:inline}
 /* Light mode red CTA */
 [data-theme="light"] .hero-cta a:first-child{background:#b026ff;color:#fff;border-color:#b026ff}
 [data-theme="light"] .hero-cta a:first-child:hover{background:#fff;color:#b026ff;box-shadow:0 0 40px rgba(176,38,255,.4)}
@@ -391,3 +391,8 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 .about-visual img{transform:translateX(40px);opacity:0;transition:transform .8s cubic-bezier(.22,1,.36,1),opacity .6s}
 .about.reveal.visible .about-visual img{transform:translateX(0);opacity:.95}
+
+.nav-logo{width:28px;height:28px;vertical-align:middle;margin-right:6px;display:inline}
+[data-theme="light"] .nav-logo.img-dark{display:none}
+
+
