@@ -399,4 +399,4 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 .about-logo-watermark{position:absolute;inset:0;width:60%;height:60%;margin:auto;opacity:.15;z-index:0;pointer-events:none;object-fit:contain}
 
-.piccione-firma{position:absolute;top:2%;right:2%;display:flex;align-items:center;gap:0;z-index:1}[data-theme="light"] .firma-logo{width:24px;height:24px;display:inline}
+.piccione-firma{position:absolute;top:15%;right:5%;display:flex;align-items:center;gap:0;z-index:1}[data-theme="light"] .firma-logo{width:24px;height:24px;display:inline}
