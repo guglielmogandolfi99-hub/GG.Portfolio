@@ -387,3 +387,7 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 @keyframes hero-img-glitch{0%,90%{filter:none;transform:inherit;clip-path:inset(0 0 0 0)}91%{filter:hue-rotate(90deg) saturate(2) contrast(1.5);transform:translate(-3px,2px);clip-path:inset(10% 0 60% 0)}92%{filter:hue-rotate(-60deg) saturate(3);transform:translate(2px,-1px);clip-path:inset(40% 0 20% 0)}93%{filter:none;transform:translate(-1px,0);clip-path:inset(0 0 0 0)}94%{transform:translate(1px,2px)}95%{transform:inherit;clip-path:inset(0 0 0 0)}}
 
 
+
+
+.about-visual img{transform:translateX(40px);opacity:0;transition:transform .8s cubic-bezier(.22,1,.36,1),opacity .6s}
+.about.reveal.visible .about-visual img{transform:translateX(0);opacity:.95}
