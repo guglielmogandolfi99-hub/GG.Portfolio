@@ -397,10 +397,10 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 
 
-.about-logo-watermark{position:absolute;inset:0;width:60%;height:60%;margin:auto;opacity:.15;z-index:0;pointer-events:none;object-fit:contain}
+
 
 [data-theme="light"] 
 
-.about-logo{position:absolute;top:8%;left:5%;width:16px;z-index:2}
 
-.piccione-credits{display:flex;align-items:center;gap:6px;margin-top:16px;opacity:.6;font-size:11px;color:#999;font-family:"JetBrains Mono",monospace}@media(max-width:768px){.piccione-credits{justify-content:center}}.credit-logo{width:36px;height:36px;display:inline}[data-theme="light"] .piccione-credits{color:#666}@media(max-width:768px){.piccione-credits{justify-content:center}}
+
+@media(max-width:768px){}[data-theme="light"] @media(max-width:768px){}
