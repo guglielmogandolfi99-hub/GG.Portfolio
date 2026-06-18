@@ -398,3 +398,5 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 
 .about-logo-watermark{position:absolute;inset:0;width:60%;height:60%;margin:auto;opacity:.15;z-index:0;pointer-events:none;object-fit:contain}
+
+.piccione-firma{position:absolute;bottom:5%;right:5%;display:flex;align-items:center;gap:8px;z-index:1}.firma-linea{width:20px;height:1px;background:#ff0}[data-theme="light"] .firma-linea{background:#b026ff}.firma-logo{width:24px;height:24px;display:inline}
