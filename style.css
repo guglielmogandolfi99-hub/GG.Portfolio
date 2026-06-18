@@ -51,7 +51,7 @@ nav>a:first-child{font-weight:700;font-size:18px;letter-spacing:-.01em;white-spa
 /* Hero */
 .hero{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:100vh;padding-top:72px;position:relative;overflow:visible;border-top:none}
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden;display:none}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.2}
 .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(5,5,5,.1) 0%,rgba(5,5,5,.5) 70%,rgba(5,5,5,.85) 100%)}
 .hero::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(to bottom,rgba(5,5,5,.3) 0%,rgba(5,5,5,.6) 60%,rgba(5,5,5,.85) 100%)}
 .hero-content{max-width:700px;z-index:1}
@@ -405,4 +405,4 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 @media(max-width:768px){}[data-theme="light"] @media(max-width:768px){}
 
-.about-logo{position:absolute;width:10px;top:5%;right:5%;z-index:0;opacity:.35}
+.about-logo{position:absolute;width:10px;top:5%;right:5%;z-index:0;opacity:.2}
