@@ -417,5 +417,5 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 
 .about-logo{width:160px !important;height:auto;margin:20px auto 10px;}
-.logo-dark{}.logo-light{display:none}
-[data-theme="light"] .logo-dark{display:none}[data-theme="light"] .logo-light{}
+.logo-dark{display:block}.logo-light{display:none}
+[data-theme="light"] .logo-dark{display:none}[data-theme="light"] .logo-light{display:block}
