@@ -403,4 +403,4 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 .about-logo{position:absolute;top:8%;left:5%;width:16px;z-index:2}
 
-.piccione-credits{display:flex;align-items:center;gap:6px;margin-top:16px;opacity:.6;font-size:11px;color:#999;font-family:"JetBrains Mono",monospace}@media(max-width:768px){.piccione-credits{justify-content:center}}.credit-logo{width:14px;height:14px;display:inline}[data-theme="light"] .piccione-credits{color:#666}@media(max-width:768px){.piccione-credits{justify-content:center}}
+.piccione-credits{display:flex;align-items:center;gap:6px;margin-top:16px;opacity:.6;font-size:11px;color:#999;font-family:"JetBrains Mono",monospace}@media(max-width:768px){.piccione-credits{justify-content:center}}.credit-logo{width:22px;height:22px;display:inline}[data-theme="light"] .piccione-credits{color:#666}@media(max-width:768px){.piccione-credits{justify-content:center}}
