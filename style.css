@@ -405,4 +405,4 @@ body::before{content:'';position:fixed;inset:0;z-index:-1;background:linear-grad
 
 @media(max-width:768px){}[data-theme="light"] @media(max-width:768px){}
 
-.about-logo{position:absolute;width:20px;top:5%;right:5%;z-index:2}
+.about-logo{position:absolute;width:16px;top:5%;right:5%;z-index:2}
