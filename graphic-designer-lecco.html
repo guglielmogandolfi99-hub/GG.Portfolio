@@ -40,6 +40,15 @@ html[data-theme="light"] a[style*="border:2px solid #ff0"]{border-color:#b026ff 
 html[data-theme="light"] a[style*="border:2px solid #ff0"]:hover{background:rgba(176,38,255,.08) !important}
 html[data-theme="light"] section[style*="background:rgba(255,255,0"]{background:rgba(176,38,255,.06) !important;border-top-color:#b026ff !important}
 html[data-theme="light"] div[style*="border-left:2px solid #ff0"]{border-left-color:#b026ff !important}
+/* Fix mobile light mode - tutti i gialli diventano magenta */
+html[data-theme="light"] .hero-phrase{color:#b026ff !important}
+html[data-theme="light"] [style*="#ff0"]{color:#b026ff !important}
+html[data-theme="light"] [style*="#ff0"]{border-color:#b026ff !important}
+html[data-theme="light"] a[style*="#ff0"]{background:#b026ff !important;color:#fff !important}
+@media(max-width:768px){
+  html[data-theme="light"] [style*="#ff0"]{color:#b026ff !important}
+  html[data-theme="light"] a[style*="#ff0"]{background:#b026ff !important;color:#fff !important}
+}
 </style>
 <script type="application/ld+json">
 {
