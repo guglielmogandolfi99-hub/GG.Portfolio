@@ -30,6 +30,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;900&family=Staatliches&family=Inter:opsz,wght@14..32,400;14..32,700;14..32,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+/* Light mode: giallo -> magenta */
+[data-theme="light"] a[style*="color:#ff0"]{color:#b026ff !important}
+[data-theme="light"] div[style*="color:#ff0"], [data-theme="light"] h3[style*="color:#ff0"]{color:#b026ff !important}
+[data-theme="light"] a[style*="background:#ff0"]{background:#b026ff !important;color:#fff !important;border-color:#b026ff !important}
+[data-theme="light"] a[style*="border:2px solid #ff0"]{border-color:#b026ff !important;color:#b026ff !important}
+[data-theme="light"] a[style*="border:2px solid #ff0"]:hover{background:rgba(176,38,255,.08) !important}
+[data-theme="light"] section[style*="background:rgba(255,255,0"]{background:rgba(176,38,255,.06) !important;border-top-color:#b026ff !important}
+</style>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
