@@ -33,12 +33,13 @@
 <style>
 /* Light mode: giallo -> magenta - bianco su magenta per CTA */
 html[data-theme="light"] a[style*="color:#ff0"]{color:#b026ff !important}
-html[data-theme="light"] div[style*="color:#ff0"], html[data-theme="light"] h3[style*="color:#ff0"]{color:#b026ff !important}
+html[data-theme="light"] div[style*="color:#ff0"], html[data-theme="light"] h3[style*="color:#ff0"], html[data-theme="light"] h4[style*="color:#ff0"]{color:#b026ff !important}
 html[data-theme="light"] a[style*="background:#ff0"]{background:#b026ff !important;color:#ffffff !important;border-color:#b026ff !important}
 html[data-theme="light"] a[style*="background:#ff0"] span{color:#ffffff !important}
 html[data-theme="light"] a[style*="border:2px solid #ff0"]{border-color:#b026ff !important;color:#b026ff !important}
 html[data-theme="light"] a[style*="border:2px solid #ff0"]:hover{background:rgba(176,38,255,.08) !important}
 html[data-theme="light"] section[style*="background:rgba(255,255,0"]{background:rgba(176,38,255,.06) !important;border-top-color:#b026ff !important}
+html[data-theme="light"] div[style*="border-left:2px solid #ff0"]{border-left-color:#b026ff !important}
 </style>
 <script type="application/ld+json">
 {
@@ -86,7 +87,7 @@ html[data-theme="light"] section[style*="background:rgba(255,255,0"]{background:
   <div class="nav-links" id="navLinks">
     <a href="index.html#about" onclick="closeNav()"><span class="lang-en">About</span><span class="lang-it">Chi sono</span></a>
     <a href="index.html#projects" onclick="closeNav()"><span class="lang-en">Projects</span><span class="lang-it">Progetti</span></a>
-    <a href="graphic-designer-lecco.html" style="color:#ff0"><span class="lang-en">Graphic Designer Lecco</span><span class="lang-it">Graphic Designer Lecco</span></a>
+    <a href="graphic-designer-lecco.html" style="color:#ff0" title="Graphic Designer Lecco"><span class="lang-en">Services</span><span class="lang-it">Servizi</span></a>
     <a href="index.html#contact" onclick="closeNav()"><span class="lang-en">Contact</span><span class="lang-it">Contatti</span></a>
   </div>
   <div class="nav-right">
@@ -174,8 +175,33 @@ html[data-theme="light"] section[style*="background:rgba(255,255,0"]{background:
     </div>
   </section>
 
-  <!-- PORTFOLIO PREVIEW -->
+  <!-- PER CHI - BUSINESS -->
   <section class="reveal" style="padding:60px 40px">
+    <div style="max-width:1400px;margin:0 auto">
+      <div style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:12px"><span class="lang-en">Who I work with — Lecco & Lombardy</span><span class="lang-it">Per chi lavoro — Lecco e Lombardia</span></div>
+      <h2 style="font-size:1.8rem;margin-bottom:32px"><span class="lang-en">Not just beautiful — useful. And coherent everywhere.</span><span class="lang-it">Non solo bello — utile. E coerente ovunque.</span></h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
+          <h3 style="font-size:15px;margin-bottom:8px">Negozi & Attività locali</h3>
+          <p style="font-size:13px;color:#aaa;line-height:1.6"><span class="lang-en">Coherent image from shop sign to menu, flyers and Instagram. I make sure a customer recognizes you in 3 seconds, on the street and on the phone.</span><span class="lang-it">Immagine coerente dall'insegna al menu, dai volantini a Instagram. Faccio in modo che un cliente ti riconosca in 3 secondi, per strada e sul telefono.</span></p>
+          <p style="font-size:12px;color:#777;margin-top:10px">vetrine, menu, volantini, social kit, insegne</p>
+        </div>
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
+          <h3 style="font-size:15px;margin-bottom:8px">Studi & Professionisti</h3>
+          <p style="font-size:13px;color:#aaa;line-height:1.6"><span class="lang-en">Sober, authoritative brand for lawyers, architects, accountants, doctors. Logo + coordinated image + sober website that inspires trust.</span><span class="lang-it">Brand sobrio e autorevole per avvocati, architetti, commercialisti, medici. Logo + immagine coordinata + sito vetrina essenziale che ispira fiducia.</span></p>
+          <p style="font-size:12px;color:#777;margin-top:10px">loghi, carta intestata, biglietti, siti vetrina semplici</p>
+        </div>
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:24px">
+          <h3 style="font-size:15px;margin-bottom:8px">Festival, Associazioni & PMI</h3>
+          <p style="font-size:13px;color:#aaa;line-height:1.6"><span class="lang-en">Visual identity that tells a story and works on all media: from festival poster to catalogue and stage graphics. See UniversoCorto.</span><span class="lang-it">Identità visiva che racconta una storia e funziona su tutti i supporti: dal poster del festival al catalogo e alla grafica palco. Vedi UniversoCorto.</span></p>
+          <p style="font-size:12px;color:#777;margin-top:10px">festival, cataloghi, brochure B2B, poster, editoria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PREVIEW -->
+  <section class="reveal" style="padding:60px 40px;background:rgba(255,255,255,.02)">
     <div style="max-width:1400px;margin:0 auto">
       <div style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:16px;margin-bottom:24px">
         <h2 style="font-size:1.8rem"><span class="lang-en">Recent works from Lecco</span><span class="lang-it">Lavori recenti da Lecco</span></h2>
@@ -198,6 +224,41 @@ html[data-theme="light"] section[style*="background:rgba(255,255,0"]{background:
           <div class="project-card-info"><div class="project-card-category">Branding Lecco</div><div class="project-card-title">Misini</div><div class="project-card-desc">Brand identity piastrelle — sistema completo</div></div>
         </a>
       </div>
+      <!-- MINI CASE STUDY - BUSINESS FOCUS -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px">
+        <div style="border-left:2px solid #ff0;padding-left:16px">
+          <h4 style="font-size:13px;color:#ff0;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px">Poster House — Lecco</h4>
+          <p style="font-size:12px;color:#aaa;line-height:1.6"><strong style="color:#fff">Brief:</strong> Creare una serie vendibile per negozio locale che racconti Resegone, lago e ponti.<br><strong style="color:#fff">Soluzione:</strong> Illustrazioni materiche + palette lago/montagna, formato poster 50x70.<br><span style="color:#666"><!-- TODO: RISULTATO - Inserisci dato reale: es. '20 copie vendute/mese, esposti in vetrina da 6 mesi' --><em>[Risultato: inserisci dato reale — es. vendite, visibilità]</em></span></p>
+        </div>
+        <div style="border-left:2px solid #ff0;padding-left:16px">
+          <h4 style="font-size:13px;color:#ff0;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px">UniversoCorto — Festival</h4>
+          <p style="font-size:12px;color:#aaa;line-height:1.6"><strong style="color:#fff">Brief:</strong> Identità per festival internazionale di cortometraggi con studio Nomina.<br><strong style="color:#fff">Soluzione:</strong> Collage digitale da foto Dondero, sistema copertina annuale.<br><span style="color:#666"><!-- TODO: RISULTATO --><em>[Risultato: es. usato per 2 edizioni, locandine/stampa]</em></span></p>
+        </div>
+        <div style="border-left:2px solid #ff0;padding-left:16px">
+          <h4 style="font-size:13px;color:#ff0;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px">Misini — Piastrelle</h4>
+          <p style="font-size:12px;color:#aaa;line-height:1.6"><strong style="color:#fff">Brief:</strong> Brand percepito come commodity, serviva sistema distintivo.<br><strong style="color:#fff">Soluzione:</strong> Logo modulare + pattern + biglietti + mockup.<br><span style="color:#666"><!-- TODO: RISULTATO --><em>[Risultato: es. usato in fiera/catalogo, coerenza vetrina]</em></span></p>
+        </div>
+      </div>
+      <p style="font-size:11px;color:#666;margin-top:16px;text-align:center">↑ Completa le 3 righe <em>[Risultato]</em> con 1 dato vero per ciascuno (anche semplice: 'in uso da X mesi, stampato in 100 copie, esposto in...'). Basta una riga per passare da portfolio a case study.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIANZE - PLACEHOLDER -->
+  <section class="reveal" style="padding:60px 40px">
+    <div style="max-width:900px;margin:0 auto">
+      <div style="font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#999;margin-bottom:12px"><span class="lang-en">What clients say — Lecco</span><span class="lang-it">Cosa dicono i clienti — Lecco</span></div>
+      <h2 style="font-size:1.6rem;margin-bottom:24px"><span class="lang-en">Trusted by local shops and studios</span><span class="lang-it">Scelto da negozi e studi locali</span></h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:20px">
+          <p style="font-size:14px;color:#aaa;font-style:italic;line-height:1.6">“<!-- TODO: TESTIMONIANZA 1 - Chiedi a cliente reale: 1-2 frasi. Es: 'Guglielmo ha tradotto il Resegone in un poster che vendiamo ogni giorno. Veloce, preciso, ha capito subito lo spirito del negozio.' --> [Inserisci qui testimonianza 1 — es. Poster House / negozio Lecco] ”</p>
+          <p style="font-size:12px;color:#777;margin-top:10px"><strong style="color:#fff">Nome e attività</strong> — Lecco • Progetto: Poster House</p>
+        </div>
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:20px">
+          <p style="font-size:14px;color:#aaa;font-style:italic;line-height:1.6">“<!-- TODO: TESTIMONIANZA 2 - Es: 'Brand rifatto in 3 settimane, ora biglietti e Instagram sono finalmente coerenti. Clienti ci riconoscono subito.' --> [Inserisci qui testimonianza 2 — es. Misini / UniversoCorto] ”</p>
+          <p style="font-size:12px;color:#777;margin-top:10px"><strong style="color:#fff">Nome e attività</strong> — Lecco • Progetto: Branding</p>
+        </div>
+      </div>
+      <p style="font-size:12px;color:#666;margin-top:16px;text-align:center">↑ Sostituisci i testi tra [ ] con 2 frasi reali dei clienti. Bastano nome, attività e 20 parole. Aggiungono fiducia immediata.</p>
     </div>
   </section>
 
