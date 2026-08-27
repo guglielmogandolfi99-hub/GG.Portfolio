@@ -128,8 +128,11 @@ nav>a:first-child{font-weight:700;font-size:18px;letter-spacing:-.01em;white-spa
 @media(max-width:768px){.contact-inner{grid-template-columns:1fr;gap:40px}}
 
 /* Footer */
-footer{display:flex;justify-content:space-between;align-items:center;padding:32px 40px;border-top:1px solid rgba(255,255,255,.06);font-size:13px;color:#999;max-width:1400px;margin:0 auto;width:100%}
+footer{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:32px 40px;border-top:1px solid rgba(255,255,255,.06);font-size:13px;color:#999;max-width:1400px;margin:0 auto;width:100%}
 @media(max-width:768px){footer{flex-direction:column;gap:12px;text-align:center;padding:24px 20px}}
+/* SEO helpers */
+.hero-phrase{font-family:'Staatliches','JetBrains Mono',sans-serif;font-size:clamp(2rem,4.5vw,3.5rem);font-weight:400;color:#ff0;line-height:1.1;margin-bottom:28px;letter-spacing:-.02em}
+strong{font-weight:700;color:inherit}
 
 /* Project Page Layout */
 .project-page{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;padding-top:120px;align-items:start}
