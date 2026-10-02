@@ -340,6 +340,13 @@ if(emailLink){
   });
 }
 
+/* Contact form -> FormSubmit (works on GitHub Pages, no backend needed).
+   First submission triggers an activation email to the owner: confirm it once. */
+var contactForm=document.getElementById('contact-form');
+if(contactForm){
+  contactForm.setAttribute('action','https://formsubmit.co/'+['guglielmogandolfi99','gmail.com'].join('@'));
+}
+
 /* ========================================
    PAGE TRANSITIONS
    ======================================== */
