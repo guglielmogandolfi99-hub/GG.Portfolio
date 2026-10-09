@@ -275,8 +275,7 @@ filterBtns.forEach(function(btn){
       card.style.opacity='0';
       card.style.transform='scale(0.95)';
       setTimeout(function(){
-        var isConcept=card.hasAttribute('data-concept');
-        if(cat==='all'||card.dataset.category===cat||(cat==='Concept'&&isConcept)){
+        if(cat==='all'||card.dataset.category===cat){
           card.style.display='';
           setTimeout(function(){card.style.opacity='1';card.style.transform='';},20);
         }else{
