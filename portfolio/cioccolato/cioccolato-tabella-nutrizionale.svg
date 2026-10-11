@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 894" font-family="Arial, Helvetica, sans-serif">
+<g fill="#0a0a0a">
+<text x="40" y="84" font-size="44" font-weight="bold">VALORI NUTRIZIONALI MEDI</text>
+<text x="40" y="142" font-size="36">Valori medi per 100 g di prodotto</text>
+<rect x="40" y="194" width="920" height="5"/>
+<text x="40" y="238" font-size="36" font-weight="bold">Energia</text>
+<text x="960" y="238" font-size="36" text-anchor="end">2515 kJ / 604 kcal</text>
+<rect x="40" y="282" width="920" height="2"/>
+<text x="40" y="326" font-size="36" font-weight="bold">Grassi</text>
+<text x="960" y="326" font-size="36" text-anchor="end">55 g</text>
+<rect x="40" y="370" width="920" height="2"/>
+<text x="80" y="414" font-size="36" font-weight="normal">di cui acidi grassi saturi</text>
+<text x="960" y="414" font-size="36" text-anchor="end">33 g</text>
+<rect x="40" y="458" width="920" height="2"/>
+<text x="40" y="502" font-size="36" font-weight="bold">Carboidrati</text>
+<text x="960" y="502" font-size="36" text-anchor="end">16 g</text>
+<rect x="40" y="546" width="920" height="2"/>
+<text x="40" y="590" font-size="36" font-weight="bold">di cui zuccheri</text>
+<text x="960" y="590" font-size="36" text-anchor="end">7 g</text>
+<rect x="40" y="634" width="920" height="2"/>
+<text x="40" y="678" font-size="36" font-weight="bold">Fibre</text>
+<text x="960" y="678" font-size="36" text-anchor="end">11 g</text>
+<rect x="40" y="722" width="920" height="2"/>
+<text x="40" y="766" font-size="36" font-weight="bold">Proteine</text>
+<text x="960" y="766" font-size="36" text-anchor="end">10 g</text>
+<rect x="40" y="810" width="920" height="2"/>
+<text x="40" y="854" font-size="36" font-weight="bold">Sale</text>
+<text x="960" y="854" font-size="36" text-anchor="end">0,03 g</text>
+<rect x="40" y="898" width="920" height="2"/>
+</g>
+</svg>
