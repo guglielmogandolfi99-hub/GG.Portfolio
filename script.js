@@ -51,13 +51,13 @@ window.toggleLang=function(){
   lang=lang==='it'?'en':'it';
   applyLang(lang);
   localStorage.setItem('lang',lang);
-  var langBtn=document.querySelector('.lang-btn');
-  if(langBtn)langBtn.setAttribute('aria-label',lang==='it'?'Switch to English':'Passa all\'italiano');
 };
 
 function applyLang(l){
   document.documentElement.lang=l;
   document.documentElement.setAttribute('lang',l);
+  var langBtn=document.querySelector('.lang-btn');
+  if(langBtn)langBtn.setAttribute('aria-label',l==='it'?'ENG, switch to English':'ITA, passa all\'italiano');
   document.querySelectorAll('[data-placeholder-'+l+']').forEach(function(el){
     el.placeholder=el.getAttribute('data-placeholder-'+l);
   });
@@ -291,34 +291,51 @@ filterBtns.forEach(function(btn){
    ======================================== */
 var lightbox=document.createElement('div');
 lightbox.className='lightbox';
-lightbox.innerHTML='<button class="lightbox-close" aria-label="Close">&times;</button><img src="" alt="">';
+lightbox.setAttribute('role','dialog');
+lightbox.setAttribute('aria-modal','true');
+lightbox.setAttribute('aria-label','Image preview');
+lightbox.innerHTML='<button class="lightbox-close" aria-label="Close image preview">&times;</button><img src="" alt="">';
 document.body.appendChild(lightbox);
 
 var lbImg=lightbox.querySelector('img');
 var lbClose=lightbox.querySelector('.lightbox-close');
+var lastFocused=null;
+
+function openLightbox(img){
+  lastFocused=document.activeElement;
+  lbImg.src=img.src;
+  lbImg.alt=img.alt;
+  lightbox.classList.add('open');
+  document.body.style.overflow='hidden';
+  setTimeout(function(){ lbClose.focus(); }, 0);
+}
+
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  document.body.style.overflow='';
+  if(lastFocused&&lastFocused.focus)lastFocused.focus();
+}
 
 document.addEventListener('click',function(e){
   var img=e.target.closest('.project-page img, .moodboard-grid img, .project-grid img, .uc-moodboard img');
   if(!img||!img.src)return;
-  lbImg.src=img.src;
-  lbImg.alt=img.alt;
-  lightbox.classList.add('open');
+  openLightbox(img);
 });
 
 lbClose.addEventListener('click',function(e){
   e.stopPropagation();
-  lightbox.classList.remove('open');
+  closeLightbox();
 });
 
 lightbox.addEventListener('click',function(e){
   if(e.target===lightbox||e.target===lbImg){
-    lightbox.classList.remove('open');
+    closeLightbox();
   }
 });
 
 document.addEventListener('keydown',function(e){
   if(e.key==='Escape'&&lightbox.classList.contains('open')){
-    lightbox.classList.remove('open');
+    closeLightbox();
   }
 });
 
